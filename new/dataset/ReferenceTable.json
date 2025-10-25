@@ -1,0 +1,58 @@
+{
+	"name": "ReferenceTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Car_Name",
+				"type": "text"
+			},
+			{
+				"name": "Year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Selling_Price",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Present_Price",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Kms_Driven",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Fuel_Type",
+				"type": "text"
+			},
+			{
+				"name": "Seller_Type",
+				"type": "text"
+			},
+			{
+				"name": "Transmission",
+				"type": "text"
+			},
+			{
+				"name": "Last_Updated_Date",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Car_data_tb"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

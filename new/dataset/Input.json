@@ -1,0 +1,16 @@
+{
+	"name": "Input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MySql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "`car_data_tb`"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
